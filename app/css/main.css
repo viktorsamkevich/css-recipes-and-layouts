@@ -1,0 +1,281 @@
+@font-face {
+	font-family: "Calibri";
+	src: url("../fonts/Calibri.ttf");
+	/* font-style: normal;
+	font-weight: normal; */
+}
+@font-face {
+	font-family: "Bebas";
+	src: url("../fonts/Bebas.ttf");
+	/* font-style: normal;
+	font-weight: normal; */
+}
+@font-face {
+	font-family: "St Marie";
+	src: url("../fonts/StMarie-Thin.otf");
+	/* font-style: normal;
+	font-weight: normal; */
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.app {
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	max-width: 1920px;
+	min-width: 640px;
+	margin-bottom: 330px;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 970px;
+	min-width: 640px;
+	height: auto;
+	min-height: 100%;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}
+select {
+	border: none;
+	outline: none;
+	background: rgba(0, 0, 0, 0);
+}
+
+/*Set height and background and border*/
+.header {
+	height: 135px;
+}
+.wr-slider {
+	height: 515px;
+}
+.wr-subscription {
+	height: 55px;
+	background: #ededed;
+}
+.wr-catalog {
+	height: 1865px;
+}
+.footer {
+	height: 330px;
+	margin-top: -330px;
+}
+
+/*Create care block and acount*/
+.header__care {
+	height: 30px;
+	width: 100%;
+	background: #000;
+}
+.header__care .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+.header__care p {
+	font-size: 11px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.header__care ul {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 11px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+}
+.header__care ul li {
+	height: 30px;
+	padding: 8px 10px;
+	border-left: 1.0px solid #444444;
+}
+.header__care ul li:last-child {
+	border-right: 1.0px solid #444444;
+}
+.header__care ul li select {
+	font-size: 11px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: center;
+}
+.header__care_account:before {
+	content: url(../img/face.png);
+	padding: 0 8px 0 0;
+	text-align: center;  
+}
+.header__care ul li i {
+	transform: rotate(90deg);
+}
+/*Create menu block*/
+.header__menu {
+	height: 105px;
+}
+.header__menu .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.header__logo {
+	margin-top: 40px;
+}
+
+.header__nav {
+	margin-top: 45px;
+	margin-left: 120px;
+}
+.header__nav_item {
+	display: inline-block;
+	margin-left: 30px;
+}
+.header__nav_item:first-child {
+	margin-left: 0;
+}
+.header__nav_item a select option {
+	font-size: 16px;
+	font-family: "Arial";
+	color: rgb(0, 0, 0);
+	line-height: 1.2;
+	text-align: left;
+}
+.header__nav_item:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	transform: scale(1.05);
+}
+.header__carts {
+	width: 214px;
+	height: 66px;
+	border: 1px solid #c1c1c1;
+	margin-top: 19px;
+}
+.header__carts li {
+	border-bottom: 1px solid #c1c1c1; 
+}
+.header__carts li:last-child {
+	border: none;
+}
+.header__carts li select {
+	height: 32px;
+	padding: 0 132px 0 5px;
+	font-size: 12px;
+	font-family: "Arial";
+	color: rgb(148, 147, 147);
+	line-height: 1.2;
+	text-align: left;
+}
+
+.header__carts li:nth-child(2n) {
+	background: #fafafa;
+	height: 31px;
+}
+.header__carts li p {
+	font-size: 11px;
+	font-family: "Arial";
+	color: rgb(148, 147, 147);
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: right;
+	padding: 7px 5px 5px 5px;
+}
+.header__carts li span::before {
+	content: url(../img/face.png);
+	padding: 0 120px 0 0; 
+}
+
+/* Create slider section */
+.wr-slider .slider__list {
+	height: 440px;
+	background: url('../img/slide.jpg') no-repeat;
+	background-size: cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	background-position: center center; 
+}
+
+/* Create subscription section */
+.wr-subscription .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.subscription__mail {
+	padding-top: 15px;
+}
+.subscription__mail form label {
+	font-size: 12px;
+	font-family: "Arial";
+	color: rgb(107, 107, 107);
+	line-height: 1.2;
+	text-align: left;
+}
+.subscription__mail form input {
+	border: none;
+	height: 28px;
+	width: 160px;
+	padding: 5px;
+}
+.subscription__mail form button {
+	height: 27px;
+	width: 27px;
+	border: none;
+	margin-left: -31px;
+	background: #fd926d;
+	border-bottom: 3px solid #dd6b44;
+}
+
+.subscription__mail form input::-webkit-input-placeholder {
+	padding: 5px;
+	font-size: 12px;
+	font-family: "Arial";
+	color: rgb(159, 159, 159);
+	font-style: italic;
+	line-height: 1.2;
+	text-align: left;
+}
+
+/* Create catalog section */
+
+
+/* Create footer */
+
+
+
+
+/*---------*/
+#comment p {
+	margin: 0 0 5px; /* Отступ снизу */
+}
+#comment label {
+	width: 110px; /* Ширина текста */
+	float: left; /* Выстраиваем по горизонтали */
+	text-align: right; /* Текст по правому краю */
+	padding-right: 10px; /* Поле справа */
+}
+#comment input[type="text"], #comment textarea {
+	width: 320px; /* Ширина текстовых полей */
+}
+input:required {
+	border: 1px solid red; /* Красная рамка для обязательных полей */
+}
