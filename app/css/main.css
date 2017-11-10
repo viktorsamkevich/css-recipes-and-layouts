@@ -1,21 +1,15 @@
-@font-face {
+/* @font-face {
 	font-family: "Calibri";
 	src: url("../fonts/Calibri.ttf");
-	/* font-style: normal;
-	font-weight: normal; */
 }
 @font-face {
 	font-family: "Bebas";
 	src: url("../fonts/Bebas.ttf");
-	/* font-style: normal;
-	font-weight: normal; */
 }
 @font-face {
 	font-family: "St Marie";
 	src: url("../fonts/StMarie-Thin.otf");
-	/* font-style: normal;
-	font-weight: normal; */
-}
+} */
 
 * {
 	box-sizing: border-box;
@@ -256,26 +250,55 @@ select {
 }
 
 /* Create catalog section */
+.catalog__best {
+	height: 430px;
+}
 
+.catalog__tabs {
+	height: 505px;
+}
+
+.catalog__clearance {
+	height: 670px;
+}
+
+.catalog__favourite {
+	height: 100px;
+}
+
+.catalog__lookshop {
+	height: 160px;
+	border-top: 2px solid #d8d8d8;
+}
 
 /* Create footer */
+.footer__accept {
+	height: 60px;
+	background: #f7f7f7;
+}
+.footer__menu {
+	height: 195px;
+	background: #ededed;
+}
+.footer__rights {
+	height: 75px;
+	background: #000;
+}
 
 
 
-
-/*---------*/
-#comment p {
-	margin: 0 0 5px; /* Отступ снизу */
+/* #comment p {
+	margin: 0 0 5px; Отступ снизу
 }
 #comment label {
-	width: 110px; /* Ширина текста */
-	float: left; /* Выстраиваем по горизонтали */
-	text-align: right; /* Текст по правому краю */
-	padding-right: 10px; /* Поле справа */
+	width: 110px; Ширина текста
+	float: left; Выстраиваем по горизонтали
+	text-align: right; Текст по правому краю
+	padding-right: 10px; Поле справа
 }
 #comment input[type="text"], #comment textarea {
-	width: 320px; /* Ширина текстовых полей */
+	width: 320px; Ширина текстовых полей
 }
 input:required {
-	border: 1px solid red; /* Красная рамка для обязательных полей */
-}
+	border: 1px solid red; Красная рамка для обязательных полей
+} */
