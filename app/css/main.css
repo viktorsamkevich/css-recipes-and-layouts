@@ -1,7 +1,7 @@
-/* @font-face {
-	font-family: "Calibri";
-	src: url("../fonts/Calibri.ttf");
-}
+@font-face {
+	font-family: "HelveticaNeueLTStd-Th";
+	src: url("../fonts/Helvetica Neue LT Std/HelveticaNeueLTStd-Th.otf");
+}/* 
 @font-face {
 	font-family: "Bebas";
 	src: url("../fonts/Bebas.ttf");
@@ -114,7 +114,7 @@ select {
 	text-transform: uppercase;
 	text-align: center;
 }
-.header__care_account:before {
+.header__care_account::before {
 	content: url(../img/face.png);
 	padding: 0 8px 0 0;
 	text-align: center;  
@@ -137,11 +137,11 @@ select {
 
 .header__nav {
 	margin-top: 45px;
-	margin-left: 120px;
+	margin-left: 147px;
 }
 .header__nav_item {
 	display: inline-block;
-	margin-left: 30px;
+	margin-left: 25px;
 }
 .header__nav_item:first-child {
 	margin-left: 0;
@@ -194,12 +194,15 @@ select {
 	padding: 7px 5px 5px 5px;
 }
 .header__carts li span::before {
+	height: 30px;
+	width: 30px;
 	content: url(../img/face.png);
 	padding: 0 120px 0 0; 
 }
 
 /* Create slider section */
 .wr-slider .slider__list {
+	position: relative;
 	height: 440px;
 	background: url('../img/slide.jpg') no-repeat;
 	background-size: cover;
@@ -207,6 +210,58 @@ select {
 	-webkit-background-size:cover;
 	background-position: center center; 
 }
+.slider__list_btn {
+	height: 118px;
+	width: 30px;
+	background: #fdfcfb;
+	border: none;
+	position: absolute;
+	top: 163px;
+}
+/* .slider__list_btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+} */
+button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.left {
+	left: 0px;
+}
+.right {
+	right: 0px;
+}
+.slider__list_heading {
+	position: absolute;
+	top: 44px;
+    left: 182px;
+}
+.slider__list_shop {
+	margin-top: 303px;
+	width: 155px;
+	height: 56px;
+	margin-left: 275px;
+	background-color: rgb(255, 166, 135);
+	box-shadow: 0px 3px 0px 0px rgba(221, 107, 68, 0.004);
+	border: none;
+	border-bottom: 2px solid #dd6b44;
+	font-size: 16px;
+	font-family: "HelveticaNeueLTStd-Th";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: left;
+	padding-left: 22px;
+    padding-top: 4px;
+}
+.slider__list_shop::after {
+	content: url(../img/shoparrow.png);
+	padding-left: 20px;
+	
+}
+
+
+
 
 /* Create subscription section */
 .wr-subscription .wrapper {
@@ -268,7 +323,7 @@ select {
 
 .catalog__lookshop {
 	height: 160px;
-	border-top: 2px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
 }
 
 /* Create footer */
