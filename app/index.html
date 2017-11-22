@@ -20,7 +20,6 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
 
 	<!-- TITLE -->
 	<title>css-recipes-and-layouts</title>
@@ -29,53 +28,105 @@
 
 	<div class="app">
 		<!-- Create header section -->
-		<header class="header">
+		<header>
+			<div class="custom_for_iphone">
+				<span>custom care: 123 456 789</span>
+			</div>
+			<div class="container">
+				<div class="details">
+					<div class="custom">
+						<span>custom care:</span>
+						<span id="number">888-23-4567</span>
+					</div>
 
-			<!--Create care block and acount-->
-			<div class="header__care">
-				<div class="wrapper">
-					<p>custom care: 888-23-4567</p>
-					<ul>
-						<li><select name="us" id=""><option value="">$ US</option><option value="">EUR</option></select></li>
-						<li class="header__care_account">MY ACCOUNT</li>
-						<li><i class="fa fa-search" aria-hidden="true"></i></li>
-					</ul>
+					<div class="right">
+						<div class="select-box">
+							<select class="first_select" name="language">
+								<option value="">$ US</option>
+								<option value="">€ EU</option>
+							</select>
+						</div>
+
+						<div class="account">
+							<img src="img/account.png" alt="">
+							<a href="#">My account</a>
+						</div>
+
+						<div class="search">
+							<a href="#"><img src="img/search.png" alt=""></a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="header__menu">
-				<div class="wrapper">
-					<!--Create logo-->
-					<div class="header__logo">
-						<a href="#"><img src="img/logo.png" alt=""></a>
-					</div>
-					<!--Create nav-->
-					<nav class="header__nav">
-						<ul>
-							<li class="header__nav_item new"><a href="#"><select name="new" id=""><option>new</option></select></a></li>
-							<li class="header__nav_item designers"><a href="#"><select name="designers" id=""><option>designers</option></select></a></a></li>
-							<li class="header__nav_item women"><a href="#"><select name="women" id=""><option>women</option></select></a></li>
-							<li class="header__nav_item men"><a href="#"><select name="men" id=""><option>men</option></select></a></li>
-							<li class="header__nav_item clearence"><a href="#"><select name="clearence" id=""><option>clearence</option></select></a></li>
-						</ul>
-					</nav>
-					
-					<ul class="header__carts">
-						<li><select name="" id=""><option value="">Your cart</option></select></li>
-						<li><p><span></span>0 ITEMS | $0</p></li>
-					</ul>
-				</div> 
-			</div>
-
 		</header>
+		<section>
+			<div class="container">
+				<div class="logo_menu">
+					<div class="logo">
+						<a href="#"><img src="img/logo.png" alt="logo"></a>
+					</div>
+					<div class="menu_cart">
+						<div class="menu">
+							<a href="#">new</a>
+							<a href="#">designers</a>
+							<a href="#">women</a>
+							<a href="#">men</a>
+							<a href="#">clearence</a>
+						</div>
 
-		<main class="main">
-			<!-- Create slider section -->
-			<section class="wr-slider">
-				<div class="slider__list">
-					<button class="slider__list_btn left"><img src="img/leftarrow.png" alt=""></button>
-					<img class="slider__list_heading" src="img/slidertext.png" alt="slidertext">
-					<button class="slider__list_shop">SHOP NOW</button>
-					<button class="slider__list_btn right"><img src="img/rightarrow.png" alt=""></button>
+						<div class="cart">
+							<div class="cart_1">
+								<select name="" class="second_select">
+									<option value="">Your cart</option>
+									<option value="">My cart</option>
+								</select>
+							</div>
+							<div class="cart_2">
+								<img src="img/bag.png" alt="">
+								<div class="item">
+									<span id="item">0 items</span>
+									<span>|</span>
+									<span id="total_price">0 $</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<nav class="navbar">
+					<span class="sr-only">Menu</span>
+					<button class="navbar-btn">☰</button>
+					<div class="navbar-inner">
+						<ul class="nav">
+							<li class="nav-item"><a class="nav-link" href="#">new</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">designers</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">women</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">men</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">clearence</a></li>
+						</ul>
+					</div>
+				</nav>
+
+			</div>
+		</section>
+
+		<section>
+			<div class="banner_buttons">
+				<img src="img/left_nav_1.png" id="left_nav_1" alt="">
+				<img src="img/right_nav_1.png" id="right_nav_1" alt="">
+
+				<div class="banners">
+					<div class="slick_banner">
+						<div class="banner">
+							<div class="crazy_summer">
+								<img src="img/Crazy_summer.png" id="crazy" alt="">
+								<div class="shop_now">
+									<h1>Shop now</h1>
+									<img src="img/arrow_shop_now.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="slider__nav">
 					<ul>
@@ -86,119 +137,444 @@
 						<li class="slider__nav_item"><a href="#"></a></li>
 					</ul>
 				</div>
-			</section>
-			<!-- Create subscription section -->
-			<section class="wr-subscription">
-				<div class="wrapper">
-					<div class="subscription__mail">
-						<form action="">
-							<label for="mail">Stay updated</label>
-							<input id="mail" type="mail" name="name" placeholder="Your email address">
-							<button type="submit">+</button>
+
+			</div>
+		</section>
+		<section id="find">
+			<div class="container">
+				<div class="find_us">
+					<div class="email">
+						<form class="" action="index.html" method="post">
+							<span>Stay updated</span> <input type="text" name="" placeholder="Your email address">
 						</form>
+						<div class="plus">
+							<img src="img/plus.png" alt="">
+						</div>
 					</div>
-					<div class="subscription__social">
-						<p>Find us here</p>
-						<ul class="subscription__social_list">
-							<li class="subscription__social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li class="subscription__social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li class="subscription__social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+
+					<div class="find_us_here">
+						<span>Find us here</span>
+
+						<div class="find_icon">
+							<a href=""><img src="img/facebook.png" alt=""></a>
+						</div>
+						<div class="find_icon">
+							<a href=""><img src="img/twitter.png" alt=""></a>
+						</div>
+						<div class="find_icon">
+							<a href=""><img src="img/pinterest.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="container">
+				<div class="best_party">
+					<div class="best">
+						<img src="img/best_outfits.jpg" alt="">
+					</div>
+					<div class="party">
+						<div class="party_collection">
+							<img src="img/party_collection.jpg" id="party_collection" alt="">
+						</div>
+						<div class="best_sell_fall">
+							<div class="best_sell">
+								<div class="">
+									<a href="#">Best sellers</a>
+									<img src="img/arrow_for_photo_3.png" alt="">
+								</div>
+							</div>
+							<div class="fall_leather">
+								<div class="fall_leather_shop">
+									<a href="#">Fall Leather</a>
+									<div class="butt_shop">
+										<span>Shop now</span>
+										<img src="img/arrow_shop_now.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="goods_nav">
+					<div class="nav_charpets">
+						<div class="charpet active"><span>what’s hot?</span></div>
+						<div class="charpet"><span>designers</span></div>
+						<div class="charpet"><span>featured</span></div>
+						<div class="charpet"><span>latest</span></div>
+					</div>
+
+					<div class="nav_arrows">
+						<div class="arrow prev_arrow">
+							<img src="img/goods_nav_left_arr_click.png"  alt="">
+						</div>
+						<div class="arrow next_arrow">
+							<img src="img/goods_nav_right_arr_click.png"  alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="charpet_for_iphone">
+				<form class="" action="index.html" method="post">
+					<select class="third_select" name="">
+						<option value="">what’s hot?</option>
+						<option value="">designers</option>
+						<option value="">featured</option>
+						<option value="">latest</option>
+					</select>
+				</form>
+			</div>
+
+			<div class="our_products">
+
+				<div class="content">
+					<div class="products">
+						
+						<div class="product none991">
+							<img src="img/girl_2.jpg" class="product_img" alt="">
+							<span class="product_title">MIMOSA LACE DRESS</span>
+							<span class="product_price">$76.95</span>
+							<div class="add_to_cart">
+								<span>Add to cart</span>
+								<img src="img/plus.png" alt="">
+							</div>
+							<div class="shop_it">
+								<img src="img/shop_it_bag.png" alt="">
+								<span>shop it</span>
+							</div>
+						</div>
+
+						<div class="product">
+							<img src="img/girl_3.jpg" class="product_img" alt="">
+							<span class="product_title">FEEL TANK</span>
+							<span class="product_price">$59.95</span>
+							<img src="img/sale.png" class="sale" alt="">
+							<div class="add_to_cart">
+								<span>Add to cart</span>
+								<img src="img/plus.png" alt="">
+							</div>
+							<div class="shop_it">
+								<img src="img/shop_it_bag.png" alt="">
+								<span>shop it</span>
+							</div>
+						</div> 
+
+						<div class="product">
+							<img src="img/girl_5.jpg" class="product_img" alt="">
+							<span class="product_title">PETROL SWEATER</span>
+							<span class="product_price">$21.50</span>
+							<img src="img/sale.png" class="sale" alt="">
+							<div class="add_to_cart">
+								<span>Add to cart</span>
+								<img src="img/plus.png" alt="">
+							</div>
+							<div class="shop_it">
+								<img src="img/shop_it_bag.png" alt="">
+								<span>shop it</span>
+							</div>
+						</div>
+
+						<div class="product">
+							<img src="img/girl_6.jpg" class="product_img" alt="">
+							<span class="product_title">NADIA DRESS</span>
+							<span class="product_price">$64.95</span>
+							<div class="add_to_cart">
+								<span>Add to cart</span>
+								<img src="img/plus.png" alt="">
+							</div>
+							<div class="shop_it">
+								<img src="img/shop_it_bag.png" alt="">
+								<span>shop it</span>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/girl_8.jpg" class="product_img" alt="">
+							<span class="product_title">GOODING SHORTS</span>
+							<span class="product_price">$79.95</span>
+							<img src="img/sale.png" class="sale" alt="">
+							<div class="add_to_cart">
+								<span>Add to cart</span>
+								<img src="img/plus.png" alt="">
+							</div>
+							<div class="shop_it">
+								<img src="img/shop_it_bag.png" alt="">
+								<span>shop it</span>
+							</div>
+						</div>
+					<!--	<div class="product">
+							<img src="img/girl_9.jpg" class="product_img" alt="">
+							<span class="product_title">NADIA DRESS</span>
+							<span class="product_price">$64.95</span>
+							<div class="add_to_cart">
+								<span>Add to cart</span>
+								<img src="img/plus.png" alt="">
+							</div>
+							<div class="shop_it">
+								<img src="img/shop_it_bag.png" alt="">
+								<span>shop it</span>
+							</div>
+						</div>
+
+					-->
+				</div>
+			</div>
+		</div>
+
+		<div class="load_more_iphone">
+			<div class="load_more load_more_slick">
+				<span>Load more</span>
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="clearance">
+				<div class="clearans">
+					<hr>
+					<img src="img/clearance.png" alt="">
+					<hr>
+				</div>
+
+				<div class="cl_products">
+					<div class="product hide_iphone">
+						<img src="img/girl_13.jpg" class="product_img" alt="">
+						<span class="product_title">NADIA DRESS</span>
+						<span class="product_price">$64.95</span>
+						<div class="add_to_cart">
+							<span>Add to cart</span>
+							<img src="img/plus.png" alt="">
+						</div>
+					</div>
+
+					<div class="product hide_iphone">
+						<img src="img/girl_14.jpg" class="product_img" alt="">
+						<span class="product_title">SOFI BLOUSE</span>
+						<span class="product_price">$26.95</span>
+						<img src="img/sale.png" class="sale" alt="">
+						<div class="add_to_cart">
+							<span>Add to cart</span>
+							<img src="img/plus.png" alt="">
+						</div>
+					</div>
+
+					<div class="product hide_iphone">
+						<img src="img/girl_11.jpg" class="product_img" alt="">
+						<span class="product_title">Gooding shorts</span>
+						<span class="product_price">$79.95</span>
+						<div class="add_to_cart">
+							<span>Add to cart</span>
+							<img src="img/plus.png" alt="">
+						</div>
+					</div>
+
+					<div class="product hide_ipad hide_iphone">
+						<img src="img/girl_15.jpg" class="product_img" alt="">
+						<span class="product_title">MIMOSA LACE DRESS</span>
+						<span class="product_price">$76</span>
+						<img src="img/sale.png" class="sale" alt="">
+						<div class="add_to_cart">
+							<span>Add to cart</span>
+							<img src="img/plus.png" alt="">
+						</div>
+					</div>
+
+					<div class="product prod_iphone">
+						<img src="img/prod_bag_1.jpg" class="product_img" alt="">
+						<span class="product_title">Atmos&Here shopper</span>
+						<span class="product_price">$49.95</span>
+						<div class="add_to_cart">
+							<span>Add to cart</span>
+							<img src="img/plus.png" alt="">
+						</div>
+					</div>
+
+					<div class="product prod_iphone">
+						<img src="img/prod_bag_2.jpg.jpg" class="product_img" alt="">
+						<span class="product_title">WishVitalise Dress</span>
+						<span class="product_price">$96.55</span>
+						<div class="add_to_cart">
+							<span>Add to cart</span>
+							<img src="img/plus.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="load_more_iphone load_more_iphone_2">
+				<div class="load_more">
+					<span>Load more</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="brands">
+			<div class="favor">
+				<hr>
+				<span>Favorite brands</span>
+				<hr>
+			</div>
+
+			<div class="container">
+				<div class="favorite_brands">
+					<img src="img/brand_1.png" alt="">
+					<img src="img/brand_2.png" alt="">
+					<img src="img/brand_3.png" alt="">
+					<img src="img/brand_4.png" alt="">
+					<img src="img/brand_5.png" alt="">
+					<img src="img/brand_6.png" alt="">
+					<img src="img/brand_7.png" class="hide_ipad" alt="">
+					<img src="img/brand_8.png" class="hide_ipad" alt="">
+				</div>
+			</div>
+
+			<hr id="full_hr">
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="about_lookshop">
+				<h1>About LookShop</h1>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="accept">
+		<div class="container">
+			<div class="we_accept">
+				<span>We accept</span>
+				<a href="#"><img src="img/we_accept_1.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_2.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_3.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_4.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_5.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_6.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_7.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_8.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_9.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_10.jpg" alt=""></a>
+				<a href="#"><img src="img/we_accept_11.jpg" alt=""></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="dif_inf">
+		<div class="container">
+			<div class="different_info">
+				<div class="dif_info_block_1">
+					<div class="info_column">
+						<h1>Customer Service</h1>
+						<ul>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Terms of payment</a></li>
+							<li><a href="#">Terms of sale</a></li>
+							<li><a href="#">Delivery terms and conditions</a></li>
+							<li><a href="#">Returns and Refunds</a></li>
+						</ul>
+					</div>
+
+					<div class="info_column">
+						<h1>Information</h1>
+						<ul>
+							<li><a href="#">Affiliate</a></li>
+							<li><a href="#">Cookies</a></li>
+							<li><a href="#">How to Shop</a></li>
+							<li><a href="#">About Nelly</a></li>
+							<li><a href="#">Investor relations</a></li>
+						</ul>
+					</div>
+
+					<div class="info_column">
+						<h1>Campaigns </h1>
+						<ul>
+							<li><a href="#">Evening dresses</a></li>
+							<li><a href="#">Makeup</a></li>
+							<li><a href="#">Fashion forward</a></li>
+							<li><a href="#">training clothes</a></li>
+							<li><a href="#">Special Occasion Dresses</a></li>
+						</ul>
+					</div>
+
+					<div class="info_column" id="stores">
+						<h1>Stores</h1>
+						<ul>
+							<li><a href="#">Paris</a></li>
+							<li><a href="#">New York</a></li>
+							<li><a href="#">London</a></li>
+							<li><a href="#">Madrid</a></li>
+							<li><a href="#">Tokio</a></li>
 						</ul>
 					</div>
 				</div>
-			</section>
-			<!-- Create catalog section -->
-			<section class="wr-catalog">
-				
-				<div class="catalog__best">
-					<div class="wrapper">
-						<div class="catalog__best_outfits">
-							<img src="img/best__outfits.png" alt="best__outfits">
-						</div>
-						<div class="catalog__best_summer">
-							<div class="row1">
-								<img src="img/summer_party.png" alt="summer_bg">
-							</div>
-							<div class="row2">
-								<div class="col1">
-									<a href="#">best sellers ></a>
-								</div>
-								<div class="col2">
-									<p>fall leather</p>
-									<button>shop now</button>
-								</div>
-							</div>
+
+				<div class="dif_info_block_2">
+					<div class="info_soc">
+						<h1>Social</h1>
+						<div class="soc_icons">
+							<a href=""><img src="img/soc_icon_1.png" alt=""></a>
+							<a href=""><img src="img/soc_icon_2.png" alt=""></a>
+							<a href=""><img src="img/soc_icon_3.png" alt=""></a>
+							<a href=""><img src="img/soc_icon_4.png" alt=""></a>
+							<a href=""><img src="img/soc_icon_5.png" alt=""></a>
+							<a href=""><img src="img/soc_icon_6.png" alt=""></a>
 						</div>
 					</div>
+
+					<div class="secured">
+						<img src="img/secured.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer_info">
+				<div class="footer_menu">
+					<a href="#">Privacy & Cookies</a>
+					<a href="#">Terms & Conditions</a>
+					<a href="#">Accessibility</a>
+					<a href="#">Store Directory</a>
+					<a href="#">About Us</a>
 				</div>
 
-				<div class="catalog__tabs">
-					
-					<div class="catalog__tabs_nav">
-						<div class="wrapper">
-							<ul class="catalog__tabs_navlist">
-								<li><button class="active">What's hot?</button></li>
-								<li><button>Designers</button></li>
-								<li><button>Featured</button></li>
-								<li><button>Latest</button></li>
+				<div class="footer_menu_iphone">
+					<nav class="navbar">
+						<button class="navbar-btn">☰</button>
+						<div class="navbar-inner">
+							<ul class="nav">
+								<li class="nav-item"><a class="nav-link" href="#">Privacy & Cookies</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Terms & Conditions</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Accessibility</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Store Directory</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
 							</ul>
-							<ul class="catalog__tabs_navarrow">
-								<li><button><img src="img/catalog__leftarrow.png" alt="catalog__leftarrow"></button></li>
-								<li><button class="active"><img src="img/catalog__rightarrow.png" alt="catalog__rightarrow"></button></li>
-							</ul>
 						</div>
-					</div>
-
-					<div class="catalog__tabs_shop">
-						<a class="catalog__tabs_shopitem" href="#"></a>
-						<a class="catalog__tabs_shopitem" href="#"></a>
-						<a class="catalog__tabs_shopitem" href="#"></a>
-						<a class="catalog__tabs_shopitem" href="#"></a>
-						<a class="catalog__tabs_shopitem" href="#"></a>
-						<a class="catalog__tabs_shopitem" href="#"></a>
-					</div>
+					</nav>
 				</div>
 
-				<div class="catalog__clearance">
-					<div class="wrapper">
-						
-					</div>
+				<div class="license">
+					<a href="#">&copy LookShop.com</a>
+					<span>All Rights Reserved</span>
 				</div>
-
-				<div class="catalog__favourite">
-					<h3>FAVOURITE BRANDS</h3>
-					<div class="wrapper">
-						
-					</div>
-				</div>
-
-				<div class="catalog__lookshop">
-					<div class="wrapper">
-						<h3>About LookShop</h3>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
-					</div>
-				</div>
-				
-			</section>
-		</div>
-	</main>
-
-	<!-- Create footer -->
-	<footer class="footer">
-		
-		<div class="footer__accept">
-			<div class="wrapper">
 			</div>
 		</div>
-		<div class="footer__menu">
-			<div class="wrapper">
-			</div>
-		</div>
-		<div class="footer__rights">
-			<div class="wrapper">
-			</div>
-		</div>
-		
 	</footer>
 </body>
 </html>
