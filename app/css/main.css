@@ -3,56 +3,67 @@
 	src: url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Blk.otf);
 	font-weight: 900;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd;
 	src: url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.otf);
 	font-weight: 700;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd;
 	src: url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Md.otf);
 	font-weight: 500;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd;
 	src: url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.otf);
 	font-weight: 300;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd;
 	src: url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-UltLt.otf);
 	font-weight: 200;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd;
 	src: url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Th.otf);
 	font-weight: 100;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd-Cn;
 	src: url(../fonts/HelveticaNeueLTStd-Cn/HelveticaNeueLTStd-BlkCn.otf);
 	font-weight: 900;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd-Cn;
 	src: url(../fonts/HelveticaNeueLTStd-Cn/HelveticaNeueLTStd-BdCn.otf);
 	font-weight: 700;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd-Cn;
 	src: url(../fonts/HelveticaNeueLTStd-Cn/HelveticaNeueLTStd-Cn.otf);
 	font-weight: 400;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd-Cn;
 	src: url(../fonts/HelveticaNeueLTStd-Cn/HelveticaNeueLTStd-LtCn.otf);
 	font-weight: 300;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd-Cn;
 	src: url(../fonts/HelveticaNeueLTStd-Cn/HelveticaNeueLTStd-UltLtCn.otf);
 	font-weight: 200;
 }
+
 @font-face {
 	font-family: HelveticaNeueLTStd-Cn;
 	src: url(../fonts/HelveticaNeueLTStd-Cn/HelveticaNeueLTStd-ThCn.otf);
@@ -65,11 +76,13 @@
 	margin: 0;
 	padding: 0;
 }
+
 .wrapper {
 	width: 970px;
 	margin: 0 auto;
 	position: relative;
 }
+
 .app {
 	font-family: Arial, sans-serif;
 	padding: 0;
@@ -88,16 +101,20 @@
 	min-width: 320px;
 	
 }
+
 img {
 	max-width: 100%;
 }
+
 a {
 	text-decoration: none;
 	cursor: pointer;
 }
+
 ul {
 	list-style: none;
 }
+
 select {
 	border: none;
 	outline: none;
@@ -109,18 +126,21 @@ header {
 	height: 30px;
 	background: #000;
 }
+
 .custom_care {
 	display: none;
 	width: 100%;
 	height: 49px;
 	background: #fafafa;
 }
+
 .custom_care span {
 	font-size: 15px;
 	font-weight: 400;
 	color: #838383;
 	text-transform: uppercase;
 }
+
 .details {
 	width: 100%;
 	height: 30px;
@@ -131,19 +151,23 @@ header {
 	-ms-flex-align: center;
 	align-items: center;
 }
+
 .details .custom {
 	width: auto;
 	height: 22px;
 }
+
 .details .custom span {
 	font-size: 11px;
 	font-weight: 400;
 	color: #fff;
 	text-transform: uppercase;
 }
+
 .details .custom .number {
 	font-size: 12px;
 }
+
 .right {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -152,6 +176,7 @@ header {
 	height: inherit;
 	width: auto;
 }
+
 .right .select_box {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -163,6 +188,7 @@ header {
 	border-left: 1px solid #444444;
 	border-right: 1px solid #444444;
 }
+
 .right .select_box .first_select {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -185,19 +211,23 @@ header {
 	-webkit-transition: all, 0.3s;
 	transition: all, 0.3s;
 }
+
 .right .select_box .first_select .option {
 	color: #000;
 	-webkit-transition: all, 0.3s;
 	transition: all, 0.3s;
 }
+
 .right .select_box .first_select .option:hover {
 	color: #fff;
 	background-color: #000;
 }
+
 .right .select_box .first_select:after {
 	border-bottom: 2px solid #fff;
 	border-right: 2px solid #fff;
 }
+
 .right .account {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -211,12 +241,14 @@ header {
 	width: 126px;
 	border-right: 1px solid #444444;
 }
+
 .right .account img {
 	width: 14px;
 	height: 13px;
 	margin-right: 10px;
 	margin-bottom: 3px;
 }
+
 .right .account a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -227,9 +259,11 @@ header {
 	-webkit-transition: all, 0.3s;
 	transition: all, 0.3s;
 }
+
 .right .account a:hover {
 	color: red;
 }
+
 .right .search {
 	width: 34px;
 	display: -webkit-box;
@@ -243,19 +277,23 @@ header {
 	align-items: center;
 	border-right: 1px solid #444444;
 }
+
 .right .search img {
 	margin-top: 3px;
 }
+
 @media screen and (max-width: 991px) {
 	.wrapper {
 		width: 720px;
 	}
 }
+
 @media screen and (max-width: 767px) {
 	.wrapper {
 		width: 530px;
 	}
 }
+
 @media screen and (max-width: 567px) {
 	.wrapper {
 		width: 290px;
@@ -349,9 +387,11 @@ header {
 	-ms-flex-align: center;
 	align-items: center;
 }
+
 .logo {
 	margin-top: 10px;
 }
+
 .logo img {
 	width: 120px;
 	height: 28px;
@@ -1333,9 +1373,11 @@ header {
 	display: -ms-flexbox;
 	display: flex;
 }
+
 .active {
 	background: #fd926d;
 }
+
 .goods_nav .nav_tabs .tab {
 	width: 25%;
 	height: inherit;
@@ -1349,6 +1391,7 @@ header {
 	-ms-flex-align: center;
 	align-items: center;
 }
+
 .goods_nav .nav_tabs .tab:hover {
 	background: #fd926d;
 	cursor: pointer;
@@ -1386,10 +1429,12 @@ header {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+
 .goods_nav .nav_arrows .arrow:hover {
 	cursor: pointer;
 	background: #fd926d;
 }
+
 .tab_for_iphone {
 	display: none;
 }
@@ -1559,7 +1604,7 @@ header {
 		-webkit-transform: translateX(20px);
 		transform: translateX(20px);
 	}
-	.nones {
+	.things > .hide_ipad {
 		display: none;
 	}
 }
